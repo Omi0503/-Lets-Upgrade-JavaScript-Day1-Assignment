@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Var vs Let vs Const</title> 
+</head> 
+  
+<body>
+<h2>var</h2>
+<p>The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable.</p>
+
+Example: var a =10;
+
+<p>Variable declarations are processed before the execution of the code.
+The scope of a JavaScript variable declared with var is its current execution context.
+The scope of a JavaScript variable declared outside the function is global.</p>
+<p>function nodeSimplified(){<br>
+  var a =10;<br>
+  console.log(a);<br>
+  if(true){<br>
+   var a=20;<br>
+   console.log(a); <br>
+  }<br>
+  console.log(a); <br>
+}<br>
+</p>
+<h2>let</h2>
+<p>The let statement declares a local variable in a block scope. It is similar to var, in that we can optionally initialize the variable.</p>
+
+Example: let a =10;
+
+<p>The let statement allows you to create a variable with the scope limited to the block on which it is used.
+It is similar to the variable we declare in other languages like Java, .NET, etc. </p>
+<p>function nodeSimplified(){<br>
+  let a =10;<br>
+  console.log(a);  <br>
+  if(true){<br>
+   let a=20;<br>
+   console.log(a); <br>
+  }<br>
+  console.log(a); <br>
+}
+</p>
+<h2>const</h2>
+<p>const statement values can be assigned once and they cannot be reassigned. The scope of const statement works similar to let statements.</p>
+
+Example: const a =10; 
+<p>function nodeSimplified(){<br>
+  const MY_VARIABLE =10;<br>
+  console.log(MY_VARIABLE);  <br> 
+}
+</p>
+</body> 
+  
+</html>

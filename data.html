@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>data type</title> 
+</head> 
+  
+<body>
+<h1>Data Type</h1>
+<p>A value in JavaScript is always of a certain type. For example, a string or a number</p>
+<h3>There are 8 basic data types in JavaScript</h3>
+
+<h2>Number </h2>
+<p>for numbers of any kind: integer or floating-point, integers are limited by ±253.</p>
+let n = 123;<br>
+n = 12.345;
+<P>The number type represents both integer and floating point numbers.<br>
+There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on.<br>
+Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: Infinity, -Infinity and NaN.<br>
+
+alert( 1 / 0 ); // Infinity <br>
+alert( "not a number" / 2 + 5 ); // NaN<br>
+
+<h2>BigInt</h2>
+<p>BigInt type was recently added to the language to represent integers of arbitrary length..</p>
+A BigInt value is created by appending n to the end of an integer:<br>
+
+// the "n" at the end means it's a BigInt<br>
+const bigInt = 1234567890123456789012345678901234567890n;
+
+<h2>String</h2>
+A string in JavaScript must be surrounded by quotes.<br>
+
+let str = "Hello";<br>
+let str2 = 'Single quotes are ok too';<br>
+let phrase = `can embed another ${str}`;<br>
+In JavaScript, there are 3 types of quotes.<br>
+
+1.Double quotes: "Hello".<br>
+2.Single quotes: 'Hello'.<br>
+3.Backticks: `Hello`.<br>
+
+<p>let name = "John";<br>
+// embed a variable<br>
+alert( `Hello, ${name}!` ); // Hello, John!<br>
+// embed an expression<br>
+alert( `the result is ${1 + 2}` ); // the result is 3<br></p>
+
+<h2>Boolean (logical type)</h2>
+The boolean type has only two values: true and false.<br>
+This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.<br>
+
+<p>let nameFieldChecked = true; // yes, name field is checked<br>
+let ageFieldChecked = false; // no, age field is not checked<br></p>
+
+let isGreater = 4 > 1;<br>
+alert( isGreater ); // true (the comparison result is "yes")<br>
+
+<h2>The “null” value</h2>
+The special null value does not belong to any of the types described above.<br>
+It forms a separate type of its own which contains only the null value:<br>
+
+<p>let age = null;</p>
+
+<h2>The “undefined” value</h2>
+The special value undefined also stands apart. It makes a type of its own, just like null.<br>
+The meaning of undefined is “value is not assigned”.<br>
+If a variable is declared, but not assigned, then its value is undefined:<br>
+
+<p>let age;<br>
+alert(age); // shows "undefined"<br>
+let age = 100;<br>
+// change the value to undefined<br>
+age = undefined;<br>
+alert(age); // "undefined"<br></p>
+
+<h2>Objects and Symbols</h2>
+The object type is special.<br>
+The symbol type is used to create unique identifiers for objects.<br>
+
+<h2>The typeof operator</h2>
+The typeof operator returns the type of the argument. It’s useful when we want to process values of different types differently or just want to do a quick check.<br>
+It supports two forms of syntax:<br>
+As an operator: typeof x.<br>
+As a function: typeof(x).<br>
+
+<p>typeof undefined // "undefined"<br>
+
+typeof 0 // "number"<br>
+
+typeof 10n // "bigint"<br>
+
+typeof true // "boolean"<br>
+
+typeof "foo" // "string"<br>
+
+typeof Symbol("id") // "symbol"<br>
+
+typeof Math // "object"  (1)<br>
+
+typeof null // "object"  (2)<br>
+
+typeof alert // "function"  (3)<br></p>
+
+</body> 
+  
+</html>
